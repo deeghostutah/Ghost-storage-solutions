@@ -531,3 +531,48 @@ footer h3 {
     max-width: 220px;
   }
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid rgba(201, 164, 92, 0.5);
+  color: #fff;
+  font-size: 2rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 24px;
+  }
+
+  .nav-logo {
+    max-width: 190px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    padding: 25px 0 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
