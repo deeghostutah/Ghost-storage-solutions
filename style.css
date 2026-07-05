@@ -177,7 +177,7 @@ section {
   border-color: #c9a45c;
 }
 .card:nth-child(1){
-    background-image:url("assets/images/closet.png");
+    background-image:url("assets/images/closet.PNG");
 }
 
 .card:nth-child(2){
@@ -185,11 +185,11 @@ section {
 }
 
 .card:nth-child(3){
-    background-image:url("assets/images/garage.png");
+    background-image:url("assets/images/garage.PNG");
 }
 
 .card:nth-child(4){
-    background-image:url("assets/images/mudroom.png");
+    background-image:url("assets/images/mudroom.PNG");
 }
 
 .card:nth-child(5){
@@ -292,7 +292,7 @@ footer h3 {
   font-size: 2rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 850px) }
   .nav-links {
     display: none;
   }
@@ -300,8 +300,7 @@ footer h3 {
   .nav-logo {
     height: 175px;
     width:auto
-    filter: brightness(0) invert(1
-    )
+    filter: brightness(0) invert(1)
   }
 
   .hero {
@@ -321,7 +320,7 @@ footer h3 {
   padding: 190px 8% 110px;
   background:
     linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.88)),
-    url("assets/images/productshero.png");
+    url("assets/images/productshero.PNG");
   background-size: cover;
   background-position: center;
   color: white;
@@ -392,19 +391,19 @@ footer h3 {
 }
 
 .product-card:nth-child(1) {
-  background-image: url("assets/images/shelfgenie.png");
+  background-image: url("assets/images/shelfgenie.PNG");
 }
 
 .product-card:nth-child(2) {
-  background-image: url("assets/images/revvv.png");
+  background-image: url("assets/images/revvv.PNG");
 }
 
 .product-card:nth-child(3) {
-  background-image: url("assets/images/custbox.png");
+  background-image: url("assets/images/custbox.PNG");
 }
 
 .product-card:nth-child(4) {
-  background-image: url("assets/images/hardware.png");
+  background-image: url("assets/images/hardware.PNG");
 }
 .gallery-item video {
   width: 100%;
@@ -452,4 +451,83 @@ footer h3 {
   font-weight: 800;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.project-form{
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 50px;
+  background: #111;
+  border: 1px solid #c9a45c;
+  border-radius: 22px;
+  box-shadow: 0 30px 70px rgba(0,0,0,.45);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.project-form h2{
+  grid-column: 1 / -1;
+}
+
+.form-grid{
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.project-form input,
+.project-form select,
+.project-form textarea{
+  width: 100%;
+  padding: 18px;
+  border: 1px solid rgba(201,164,92,.35);
+  background: #f5f1e8;
+  color: #111;
+  font-size: 1rem;
+}
+
+.project-form textarea{
+  grid-column: 1 / -1;
+  min-height: 170px;
+  resize: vertical;
+}
+
+.project-form button{
+  grid-column: 1 / -1;
+  padding: 20px;
+  background: #c9a45c;
+  border: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    padding: 0;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .nav-logo {
+    max-width: 220px;
+  }
 }
